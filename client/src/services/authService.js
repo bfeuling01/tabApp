@@ -5,8 +5,3 @@ export default {
     return api().post('register', credentials)
   }
 }
-
-// authService.register({
-//   email: 'test@gmail.com',
-//   password: '123456'
-// })

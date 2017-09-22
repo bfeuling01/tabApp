@@ -7,19 +7,15 @@
         </v-toolbar>
         <div class="pl-4 pr-4 pt-2 pb-2">
           <v-text-field
-            name="email"
             label="Email Address"
-            v-model="email"
-            class="email"></v-text-field>
+            v-model="email"></v-text-field>
           <v-text-field
-            name="password"
             label="Password"
-            v-model="password"
-            class="password"></v-text-field>
+            v-model="password"></v-text-field>
           <div class="error" v-html="error" />
           <br>
           <v-btn
-            @click="register" class="cyan">
+            @click="register" class="cyan" dark>
             Register
           </v-btn>
         </div>

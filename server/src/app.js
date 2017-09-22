@@ -13,6 +13,7 @@ app.use(cors())
 
 require('./routes')(app)
 
+// add {force: true} inside .sync() to clear all tables
 sequelize.sync()
   .then(() => {
     app.listen(config.port)
